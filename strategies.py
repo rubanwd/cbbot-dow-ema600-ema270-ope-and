@@ -77,10 +77,10 @@ class Strategies:
         #     return 'sell'
         # return None
     
-        if trend == 'uptrend' and (rsi < 35 or current_price < lower_band):
+        if trend == 'uptrend' and (rsi < 30 or current_price < lower_band):
             return 'buy'
         
-        if trend == 'downtrend' and (rsi > 65 or current_price > upper_band):
+        if trend == 'downtrend' and (rsi > 70 or current_price > upper_band):
             return 'sell'
         
         return None
